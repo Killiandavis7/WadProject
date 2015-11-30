@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>News Reader</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/half-slider.css" rel="stylesheet">
+
+
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+           
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">News</a>
+            </div>
+           
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Articles</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+        
+    </nav>
+
+   
+    <header id="myCarousel" class="carousel slide">
+       
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        
+        <div class="carousel-inner">
+            <div class="item active">
+               
+                <div class="fill" style="background-image:url('http://media.skynews.com/media/images/generated/2015/11/29/432799/default/v2/fury3-1-589x442.jpg');"></div>
+                <div class="carousel-caption1">
+                    <h2 style="color:grey; font-size:24px; margin-bottom: 20px">Tyson Heavy Weight Champion</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://yalibnan.com/wp-content/uploads/2015/11/LI-Fi-technology.jpg');"></div>
+                <div class="carousel-caption1">
+                    <h2 style="color: grey">Li-Fi 100 Times Faster</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://core3.staticworld.net/images/article/2013/01/encrypt_primary-100022114-gallery.jpg');"></div>
+                <div class="carousel-caption1">
+                    <h2 style="color: grey">Hackers</h2>
+                </div>
+            </div>
+        </div>
+
+        
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background-color: #808080">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next" style="background-color: #808080; ">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+   
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-9">
+                <h1>News Articles</h1>
+                <p>XML/XSD Table here with article's.</p>
+            </div>
+        </div>
+
+        <hr>
+
+      
+        <footer>
+            
+        </footer>
+
+    </div>
+   
+
+    
+    <script src="js/jquery.js"></script>
+
+   
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+    $('.carousel').carousel({
+        interval: 10000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
