@@ -16,12 +16,13 @@
     <link href="css/half-slider.css" rel="stylesheet">
 
    <script src="https://maps.googleapis.com/maps/api/js"></script>
+   
     <script>
       function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(53.346108, -6.267448),
-          zoom: 10,
+          center: new google.maps.LatLng(53.349152, -6.242637),
+          zoom: 17,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
@@ -124,10 +125,11 @@
 								</div>
 								
 								</div>
+								<br/>
 							
 							<div class="col-md-6">		
 								<div id="input_message" class="col-md-12">
-										<textarea id="comments" class="form-control" name="message" rows="6" placeholder="Your Message ..."></textarea>
+										<textarea id="comments" class="form-control" name="message" rows="8" placeholder="Your Message ..."></textarea>
 									</div> 
 								</div>
 									<!-- Submit Button -->
@@ -142,7 +144,7 @@
 								</form>	
             </div>
         </div>
-		
+		<br/>
 		<div class="col-lg-4">
 			<div class="widget-contact">
 				<strong><u>Main Office</u></strong>
@@ -156,7 +158,7 @@
 				</address>
 
 				<address>
-				  <strong>Email<br>
+				  <strong><u>Email</u><br>
 				  <a href="mailto:#">news@gmail.com</a></strong>
 				</address>	
 				<!-- /Section: contact
@@ -173,7 +175,7 @@
 			</div>	
 		</div>
     </div>
-    
+    <br/>
     <div id="map"></div>
 
       

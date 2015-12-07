@@ -85,7 +85,7 @@
 
 
 								
-								<a class="btn btn-primary btn-lg" href="/">Go back to the website</a>
+								<a class="btn btn-primary btn-lg" href="index.html">Go back to the website</a>
 							</div>
 						</div>	
 					</div>					
