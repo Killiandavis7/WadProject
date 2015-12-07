@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <body>
+      <h2>Articles</h2>
+      <table valign="bottom" align="center" margin="0 auto">
+         <tr>
+            
+            <td valign="centre" align="center" height="250px" width="250px">
+               <h2>British Politics</h2>
+               <img width="200" height="150px" src="pic/G8.jpg" />
+               <p>Some park somewhere..</p>
+            </td>
+            
+            <td valign="centre" align="center" height="250px" width="250px">
+               <h2>ISIS Hacked</h2>
+               <img width="200" height="150px" src="pic/ISIS.jpg" />
+               <p>Isis has be hack etc</p>
+            </td>
+            
+            <td valign="centre" align="center" height="250px" width="250px">
+               <h2>Green energy in water</h2>
+               <img width="200" height="150px" src="pic/Green energy.jpg" />
+               <p>SOme wind things..</p>
+            </td>
+            
+         </tr>
+      </table>
+   </body>
+</html>

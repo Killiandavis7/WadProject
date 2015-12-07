@@ -1,55 +1,24 @@
-<CATALOG>
-       <CITYSCAPES>
-           <PAINTING>
-              <CATEGORY>Cityscapes</CATEGORY>      
-              <TITLE>Alley in Florence</TITLE>
-              <DIMENSIONS>15 X 20 in.</DIMENSIONS>
-              <PRICE>400 $</PRICE>
-             <file type="gif">images/thumbnails/cityscapes/alley in florence.gif</file>
-            </PAINTING>
-            <PAINTING>
-               <CATEGORY>Cityscapes</CATEGORY>      
-               <TITLE>Christmas in New York</TITLE>
-               <DIMENSIONS>12 X 14 in.</DIMENSIONS>
-               <PRICE>250 $</PRICE>
-               <file type="gif">images/thumbnails/cityscapes/christmas in new york.gif</file>
-            </PAINTING>
-            <PAINTING>
-               <CATEGORY>Cityscapes</CATEGORY>      
-               <TITLE>New York, New York</TITLE>
-               <DIMENSIONS>21 X 29 in.</DIMENSIONS>
-               <PRICE>495 $</PRICE>
-               <file type="gif">images/thumbnails/cityscapes/new york new york!.gif</file>
-            </PAINTING>
-            <PAINTING>
-               <CATEGORY>Cityscapes</CATEGORY>      
-               <TITLE>30th Street Station</TITLE>
-               <DIMENSIONS>10 X 11 in.</DIMENSIONS>
-               <PRICE>SOLD</PRICE>
-               <file type="gif">images/thumbnails/cityscapes/philly 1.gif</file>
-            </PAINTING>
-       </CITYSCAPES>
-       <FLORA>
-           <PAINTING>
-               <CATEGORY>Flora</CATEGORY>      
-               <TITLE>Plumeria</TITLE>
-               <DIMENSIONS>14 X 20 in.</DIMENSIONS>
-               <PRICE></PRICE>
-               <file type="gif">images/thumbnails/flora/plumeria.gif</file>
-          </PAINTING>
-          <PAINTING>
-           <CATEGORY>Flora</CATEGORY>      
-                <TITLE>Tropical in Red</TITLE>
-                <DIMENSIONS>14 X 20 in.</DIMENSIONS>
-                <PRICE>SOLD</PRICE>
-                <file type="gif">images/thumbnails/flora/red leaf.gif</file>
-          </PAINTING>
-          <PAINTING>
-             <CATEGORY>Flora</CATEGORY>      
-             <TITLE>Sunflower</TITLE>
-             <DIMENSIONS>14 X 20 in.</DIMENSIONS>
-             <PRICE></PRICE>
-         <file type="gif">images/thumbnails/flora/sunflower.gif</file>
-          </PAINTING>
-     </FLORA>
-   </CATALOG>
+<?xml version="1.0" encoding="UTF-8"?>
+<news>
+       
+           <articles>
+              <title>British Politics</title>      
+              <description>Some park somewhere..</description>
+             <file type="jpg">pic/G8.jpg</file>
+            </articles>
+    
+            
+          <articles>
+              <title>ISIS Hacked</title>   
+              <description>Isis has be hack etc</description>
+             <file type="jpg">pic/ISIS.jpg</file>
+            </articles>
+     
+           <articles>
+              <title>Green energy in water</title>      
+              <description>SOme wind things..</description>
+             <file type="jpg">pic/Green Energy.jpg</file>
+            </articles>
+     
+           
+</news>

@@ -1,34 +1,36 @@
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-   <xsl:output method="html" indent="yes"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-   <xsl:template match="/">
-      <html>
-         <body>
-            <xsl:apply-templates/>
-         </body>
-      </html>
-   </xsl:template>
+<xsl:template match="/">
+  <html>
+  <body>
+  <h2>Articles</h2>
+  
+  <table margin="0 auto" align="center" valign="bottom">
+ 
+    
+    
+    <tr>
+    <xsl:for-each select="news/articles">
+      
+      <td width="250px" height="250px" align="center" valign="centre">
+      <h2><xsl:value-of select="title"/></h2>
+      
+   
+      <img src="{file}" height="150px" width="200"/>
+    
+      <p><xsl:value-of select="description"/></p>
+      </td>
+      
+      
+    </xsl:for-each>
+    </tr>
+    
+    
+  </table>
+  </body>
+  </html>
+</xsl:template>
 
-   <xsl:template match="CATALOG/*">
-      <table style="margin: 0 auto;" cellspacing="30">
-         <xsl:for-each select="PAINTING[position() mod 4 = 1]">
-            <tr>
-               <xsl:for-each select=" . | following-sibling::*[position() &lt; 4]">
-                  <td valign="bottom" align="center">
-                     <img src="{file}"/>
-                     <p>
-                        <xsl:value-of select="TITLE"/>
-                     </p>
-                     <p>
-                        <xsl:value-of select="DIMENSIONS"/>
-                     </p>
-                     <p>
-                        <xsl:value-of select="PRICE"/>
-                     </p>
-                  </td>
-               </xsl:for-each>
-            </tr>
-         </xsl:for-each>
-      </table>
-   </xsl:template>
 </xsl:stylesheet>
