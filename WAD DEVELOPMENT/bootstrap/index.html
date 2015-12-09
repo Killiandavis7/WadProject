@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    
 
     <title>News Reader</title>
 
@@ -23,7 +24,28 @@
     
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
 
-    
+    <script> 
+    function showUser(str) {
+    if (str == "") {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else { 
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET","getuser.php?q="+str,true);
+        xmlhttp.send();
+    }
+}</script>
     
     
 </head>
@@ -114,17 +136,6 @@
             <div class="col-lg-9">
               <br>
               
-              <form>
-<select name="users" onchange="showUser(this.value)">
-  <option value="">Select a Day:</option>
-  <option value="1">Monday</option>
-  <option value="2">Tuesday</option>
-  <option value="3">Wednesday</option>
-  <option value="4">Thursday</option>
-  </select>
-</form>
-<br>
-<div id="txtHint"><b>Weather info will be listed here...</b></div>
               
       <!--JQuery Tables -->
               <div id="menu">
@@ -272,6 +283,19 @@
 
             <div class="col-lg-3">
                 <br/>
+                              <form>
+<select name="users" onchange="showUser(this.value)">
+  <option value="">Select a Day:</option>
+  <option value="1">Monday</option>
+  <option value="2">Tuesday</option>
+  <option value="3">Wednesday</option>
+  <option value="4">Thursday</option>
+  </select>
+</form>
+<br>
+<div id="txtHint"><b>Weather info will be listed here...</b></div>
+
+<br>
                 
      <a class="twitter-timeline" href="https://twitter.com/StudentResourse" data-widget-id="587483155935944704">Tweets by @StudentResourse</a>
 <script>
