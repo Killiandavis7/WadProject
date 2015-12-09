@@ -112,7 +112,19 @@
 
         <div class="row">
             <div class="col-lg-9">
-              <br
+              <br>
+              
+              <form>
+<select name="users" onchange="showUser(this.value)">
+  <option value="">Select a Day:</option>
+  <option value="1">Monday</option>
+  <option value="2">Tuesday</option>
+  <option value="3">Wednesday</option>
+  <option value="4">Thursday</option>
+  </select>
+</form>
+<br>
+<div id="txtHint"><b>Weather info will be listed here...</b></div>
               
       <!--JQuery Tables -->
               <div id="menu">
@@ -163,7 +175,7 @@
                 </div>
                 
                 
-            <!--Add two more sections below!-->
+            <!--second table-->
                 <div id="secondh3">
                 <h3>WEATHER</h3>
                 </div>
@@ -253,12 +265,7 @@
          </tr>
       </table>
                 </div>
-            
              </div>
-      
-   
-
-	  
             </div>
        
 

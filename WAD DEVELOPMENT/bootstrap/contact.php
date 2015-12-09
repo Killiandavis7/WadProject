@@ -35,7 +35,7 @@
 					 
 				// EDIT THE 2 LINES BELOW AS REQUIRED
 				 
-				$email_to = "killian.davis23@gmail.com";
+				$email_to = "x14402132@student.ncirl.ie";
 				$email_subject = "News Contact";
 				$email_subject = "News Message";
 				 
