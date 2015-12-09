@@ -61,3 +61,10 @@ footer {
         width: 100%;
         height: 400px;
       }
+#firsth3 > h3,
+#secondh3 > h3,
+#thirdh3 > h3{
+    text-align: center;
+    border:1px solid; 
+    border-radius: 7px 7px 0px 0px;
+}

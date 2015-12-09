@@ -16,7 +16,9 @@
     <link href="css/half-slider.css" rel="stylesheet">
     
      <script src="https://maps.googleapis.com/maps/api/js"></script>
-   
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
     <script>
       function initialize() {
         var mapCanvas = document.getElementById('map');
@@ -29,6 +31,27 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+    
+    <script>
+    $(document).ready(function(){
+   
+    $("#secondsec").hide();
+    $("#thirdsec").hide();
+
+    $("#firsth3").click(function(){
+        $("#hideme").toggle();
+    });
+    $("#secondh3").click(function(){
+        $("#secondsec").toggle();   
+    });
+    $("#thirdh3").click(function(){
+        $("#thirdsec").toggle();
+    });
+    
+    
+    });
+</script>
+    
     
 
 
@@ -120,38 +143,17 @@
         <div class="row">
             <div class="col-lg-9">
               <br>
-               <table style="margin: 0 auto;">
-	  <table  align="center" valign="bottom">
-         <tr>
-            
 
-            <td width="250px" height="250px" align="center" valign="centre" >
-                <h2><b><u>Heading</u></b></h2>
-			    <img  style="height: 150px; width: 200px" src="pic/G8.jpg" />
-			    <p>Blank Photo</p>
-            </td>
-         
-            
-        
-            <td width="250px" height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
-                <img style="height: 150px; width: 200px" src="pic/Green energy.jpg" />
-                <p>Blank Photo</p>
-            </td>
-               
-            
-            <td width="250px" height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
-               <img style="height: 150px; width: 200px" src="pic/HouseFire.jpg" />
-               <p>Blank Photo</p>
-            </td>
-           
-           
-
-         
-         </tr>
-      </table>
-      <table cellspacing="30" style="margin: 0;">
+      
+      
+      <!--JQuery Tables -->
+              <div id="menu">
+                  
+                  <div id="firsth3" >
+                <h3>SPORT</h3>
+                </div>
+                <div id="hideme">
+                <table cellspacing="30" style="margin: 0;">
 	  <table align="center" valign="bottom">
          <tr>
             
@@ -181,6 +183,83 @@
             
          </tr>
       </table>
+                </div>
+                
+                
+            <!--Add two more sections below!-->
+                <div id="secondh3">
+                <h3>WEATHER</h3>
+                </div>
+                <div id="secondsec">
+                <table cellspacing="30" style="margin: 0;">
+	  <table align="center" valign="bottom">
+         <tr>
+            
+            
+            <td width="250px" Height="250px" align="center" valign="centre">
+                <h2><b><u>Heading</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/Jail.jpg" />
+               <p>Blank Photo</p>
+            </td>
+           
+            
+          
+            <td width="250px" Height="250px" align="center" valign="centre">
+                <h2><b><u>Heading</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/klitschko-tickets.jpg" />
+               <p>Blank Photo</p>
+            </td>
+       
+            
+            
+            <td width="250px" Height="250px" align="center" valign="centre">
+                <h2><b><u>Heading</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/paris.jpg" />
+               <p>Blank Photo</p>
+            </td>
+         
+            
+         </tr>
+      </table>
+                </div>
+                
+                <div id="thirdh3">
+                <h3>OTHER ARTICLES..</h3>
+                </div>
+                <div id="thirdsec">
+                <table cellspacing="30" style="margin: 0;">
+	  <table align="center" valign="bottom">
+         <tr>
+            
+            
+            <td width="250px" Height="250px" align="center" valign="centre">
+                <h2><b><u>Heading</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/Jail.jpg" />
+               <p>Blank Photo</p>
+            </td>
+           
+            
+          
+            <td width="250px" Height="250px" align="center" valign="centre">
+                <h2><b><u>Heading</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/klitschko-tickets.jpg" />
+               <p>Blank Photo</p>
+            </td>
+       
+            
+            
+            <td width="250px" Height="250px" align="center" valign="centre">
+                <h2><b><u>Heading</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/paris.jpg" />
+               <p>Blank Photo</p>
+            </td>
+         
+            
+         </tr>
+      </table>
+                </div>
+            
+             </div>
       
       <?php
 
@@ -292,11 +371,11 @@ echo $proc->transformToXML($xml);
 								</form>	
             </div>
         </div>
-		<br/>
+		<br/><div id=getcont></div>
 		<div class="col-lg-4">
 			<div class="widget-contact">
 				<strong><u>Main Office</u></strong>
-				<div id=getcont></div>
+			
 				<address>
 				  <strong>Article News</strong><br>
 				  <strong>1 Street,<br>
@@ -328,6 +407,8 @@ echo $proc->transformToXML($xml);
 
    
     <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/script.js"></script>
 
 
     <script>
