@@ -3,7 +3,7 @@
 
 	<head>
 
-		<!-- Basic -->
+	
 		<meta charset="utf-8">
 		<title>  Contact Request Confirmation</title>
 		<meta name="author" content="DSA79">
@@ -11,14 +11,14 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">		
 		   
-		<!-- Libs CSS -->
+		
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 		
-		<!-- Google Fonts -->	
+			
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,400italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
 		
-		<!-- Favicons -->	
+	
 		<link rel="shortcut icon" href="img/favicon.ico">
 
 		   
@@ -33,17 +33,17 @@
 			if(isset($_POST['email'])) {
 				 
 					 
-				// EDIT THE 2 LINES BELOW AS REQUIRED
+			
 				 
 				$email_to = "x14402132@student.ncirl.ie";
 				$email_subject = "News Contact";
 				$email_subject = "News Message";
 				 
 				   
-				$first_name = $_POST['first_name']; // required 
-				$email_from = $_POST['email']; // required
-				$subject = $_POST['subject']; // required
-				$comments = $_POST['message']; // required
+				$first_name = $_POST['first_name'];  
+				$email_from = $_POST['email']; 
+				$subject = $_POST['subject']; 
+				$comments = $_POST['message']; 
 				 
 				$email_message = "Form details below.\n\n";
 				 
