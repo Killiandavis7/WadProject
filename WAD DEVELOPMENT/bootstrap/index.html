@@ -19,42 +19,12 @@
      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: new google.maps.LatLng(53.349152, -6.242637),
-          zoom: 17,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+    <script src="js/script.js"></script>
     
-    <script>
-    $(document).ready(function(){
-   
-    $("#secondsec").hide();
-    $("#thirdsec").hide();
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
 
-    $("#firsth3").click(function(){
-        $("#hideme").toggle();
-    });
-    $("#secondh3").click(function(){
-        $("#secondsec").toggle();   
-    });
-    $("#thirdh3").click(function(){
-        $("#thirdsec").toggle();
-    });
     
     
-    });
-</script>
-    
-    
-
-
     
 </head>
 
@@ -80,10 +50,10 @@
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="#getcont">Articles</a>
+                        <a href="#menu">Articles</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="#getcont">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -142,10 +112,8 @@
 
         <div class="row">
             <div class="col-lg-9">
-              <br>
-
-      
-      
+              <br
+              
       <!--JQuery Tables -->
               <div id="menu">
                   
@@ -161,7 +129,10 @@
             <td width="250px" Height="250px" align="center" valign="centre">
                 <h2><b><u>Heading</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/Jail.jpg" />
-               <p>Blank Photo</p>
+               <p><a href="#">Display Article Description</a></p>
+      		<div id="result">
+		
+		</div>
             </td>
            
             
@@ -169,7 +140,10 @@
             <td width="250px" Height="250px" align="center" valign="centre">
                 <h2><b><u>Heading</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/klitschko-tickets.jpg" />
-               <p>Blank Photo</p>
+               <p id="displayOne"><a href="#">Display Article Description</a></p>
+      		<div id="resultOne">
+		
+		</div>
             </td>
        
             
@@ -177,7 +151,10 @@
             <td width="250px" Height="250px" align="center" valign="centre">
                 <h2><b><u>Heading</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/paris.jpg" />
-               <p>Blank Photo</p>
+               <p id="displayTwo"><a href="#">Display Article Description</a></p>
+      		<div id="resultTwo">
+		
+		</div>
             </td>
          
             
@@ -199,7 +176,10 @@
             <td width="250px" Height="250px" align="center" valign="centre">
                 <h2><b><u>Heading</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/Jail.jpg" />
-               <p>Blank Photo</p>
+                 <p id="displayThree"><a href="#">Display Article Description</a></p>
+      		<div id="resultThree">
+		
+		</div>
             </td>
            
             
@@ -207,7 +187,10 @@
             <td width="250px" Height="250px" align="center" valign="centre">
                 <h2><b><u>Heading</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/klitschko-tickets.jpg" />
-               <p>Blank Photo</p>
+                    <p id="displayFour"><a href="#">Display Article Description</a></p>
+      		<div id="resultFour">
+		
+		</div>
             </td>
        
             
@@ -215,7 +198,10 @@
             <td width="250px" Height="250px" align="center" valign="centre">
                 <h2><b><u>Heading</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/paris.jpg" />
-               <p>Blank Photo</p>
+                    <p id="displayFive"><a href="#">Display Article Description</a></p>
+      		<div id="resultFive">
+		
+		</div>
             </td>
          
             
@@ -235,7 +221,10 @@
             <td width="250px" Height="250px" align="center" valign="centre">
                 <h2><b><u>Heading</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/Jail.jpg" />
-               <p>Blank Photo</p>
+              <p id="displaySix"><a href="#">Display Article Description</a></p>
+      		<div id="resultSix">
+		
+		</div>
             </td>
            
             
@@ -243,7 +232,10 @@
             <td width="250px" Height="250px" align="center" valign="centre">
                 <h2><b><u>Heading</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/klitschko-tickets.jpg" />
-               <p>Blank Photo</p>
+               <p id="displaySeven"><a href="#">Display Article Description</a></p>
+      		<div id="resultSeven">
+		
+		</div>
             </td>
        
             
@@ -251,7 +243,10 @@
             <td width="250px" Height="250px" align="center" valign="centre">
                 <h2><b><u>Heading</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/paris.jpg" />
-               <p>Blank Photo</p>
+               <p id="displayEight"><a href="#">Display Article Description</a></p>
+      		<div id="resultEight">
+		
+		</div>
             </td>
          
             
@@ -261,23 +256,9 @@
             
              </div>
       
-      <?php
+   
 
-// Load the XML source
-$xml = new DOMDocument;
-$xml->load('table.xml');
-$xsl = new DOMDocument;
-$xsl->substituteEntities = true; 
-$xsl->load('table.xsl');
-
-// Configure the transformer
-$proc = new XSLTProcessor;
-$proc->importStyleSheet($tab1.xsl); // attach the xsl rules
-
-echo $proc->transformToXML($xml);
-
-?>
-      
+	  
             </div>
        
 
@@ -285,13 +266,20 @@ echo $proc->transformToXML($xml);
             <div class="col-lg-3">
                 <br/>
                 
-                 <a class="twitter-timeline" href="https://twitter.com/StudentResourse" data-widget-id="587483155935944704">Tweets by @StudentResourse</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+     <a class="twitter-timeline" href="https://twitter.com/StudentResourse" data-widget-id="587483155935944704">Tweets by @StudentResourse</a>
+<script>
+    !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js,fjs);
+        }}
+    (document,"script","twitter-wjs");
+</script>
+
 <iframe allowtransparency="true" src="http://www.facebook.com/connect/connect.php?id=751062355012337&amp;connections=0&amp;stream=1" style="border: none; width: 260px; height: 200px;" frameborder="1" scrolling="no"></iframe>
     </div>
               
 
-        <hr>
 
       
         <footer>
@@ -306,13 +294,13 @@ echo $proc->transformToXML($xml);
 			<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					
 					<div class="section-heading">
     					<h2>GET IN TOUCH</h2>
 					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
-					</div>
+				
 				</div>
 			</div>
 			</div>
