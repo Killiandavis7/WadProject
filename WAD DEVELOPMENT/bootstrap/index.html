@@ -24,30 +24,7 @@
     
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
 
-    <script> 
-    function showUser(str) {
-    if (str == "") {
-        document.getElementById("txtHint").innerHTML = "";
-        return;
-    } else { 
-        if (window.XMLHttpRequest) {
-            // code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp = new XMLHttpRequest();
-        } else {
-            // code for IE6, IE5
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
-            }
-        };
-        xmlhttp.open("GET","getuser.php?q="+str,true);
-        xmlhttp.send();
-    }
-}</script>
-    
-    
+
 </head>
 
 <body>
@@ -69,7 +46,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="#menu">Weather</a>
                     </li>
                     <li>
                         <a href="#menu">Articles</a>
@@ -127,7 +104,7 @@
     </header>
 
    
-    <div class="container" style="background-color: #f2f2f2" >
+    <div class="container" style="background-color: #e6e6e6" >
         <br/>
         
         
@@ -141,7 +118,7 @@
               <div id="menu">
                   
                   <div id="firsth3" >
-                <h3>SPORT</h3>
+                <h3>NEWS</h3>
                 </div>
                 <div id="hideme">
                 <table cellspacing="30" style="margin: 0;">
@@ -150,8 +127,8 @@
             
             
             <td width="250px" Height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
-               <img style="height: 150px; width: 200px" src="pic/Jail.jpg" />
+                <h2><b><u>Fury Champ</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/klitschko-tickets.jpg" />
                <p><a href="#">Display Article Description</a></p>
       		<div id="result">
 		
@@ -161,8 +138,8 @@
             
           
             <td width="250px" Height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
-               <img style="height: 150px; width: 200px" src="pic/klitschko-tickets.jpg" />
+                <h2><b><u>Politicians</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/G8.jpg" />
                <p id="displayOne"><a href="#">Display Article Description</a></p>
       		<div id="resultOne">
 		
@@ -172,7 +149,7 @@
             
             
             <td width="250px" Height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
+                <h2><b><u>Paris</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/paris.jpg" />
                <p id="displayTwo"><a href="#">Display Article Description</a></p>
       		<div id="resultTwo">
@@ -188,7 +165,7 @@
                 
             <!--second table-->
                 <div id="secondh3">
-                <h3>WEATHER</h3>
+                <h3>MORE NEWS..</h3>
                 </div>
                 <div id="secondsec">
                 <table cellspacing="30" style="margin: 0;">
@@ -197,7 +174,7 @@
             
             
             <td width="250px" Height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
+                <h2><b><u>Jail</u></b></h2>
                <img style="height: 150px; width: 200px" src="pic/Jail.jpg" />
                  <p id="displayThree"><a href="#">Display Article Description</a></p>
       		<div id="resultThree">
@@ -208,8 +185,8 @@
             
           
             <td width="250px" Height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
-               <img style="height: 150px; width: 200px" src="pic/klitschko-tickets.jpg" />
+                <h2><b><u>Russian Rocket</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/Russia.jpg" />
                     <p id="displayFour"><a href="#">Display Article Description</a></p>
       		<div id="resultFour">
 		
@@ -219,8 +196,8 @@
             
             
             <td width="250px" Height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
-               <img style="height: 150px; width: 200px" src="pic/paris.jpg" />
+                <h2><b><u>ISIS</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/ISIS.jpg" />
                     <p id="displayFive"><a href="#">Display Article Description</a></p>
       		<div id="resultFive">
 		
@@ -233,7 +210,7 @@
                 </div>
                 
                 <div id="thirdh3">
-                <h3>OTHER ARTICLES..</h3>
+                <h3>OTHER NEWS..</h3>
                 </div>
                 <div id="thirdsec">
                 <table cellspacing="30" style="margin: 0;">
@@ -242,8 +219,8 @@
             
             
             <td width="250px" Height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
-               <img style="height: 150px; width: 200px" src="pic/Jail.jpg" />
+                <h2><b><u>House Fire</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/HouseFire.jpg" />
               <p id="displaySix"><a href="#">Display Article Description</a></p>
       		<div id="resultSix">
 		
@@ -253,8 +230,8 @@
             
           
             <td width="250px" Height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
-               <img style="height: 150px; width: 200px" src="pic/klitschko-tickets.jpg" />
+                <h2><b><u>Green Energy</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/Green energy.jpg" />
                <p id="displaySeven"><a href="#">Display Article Description</a></p>
       		<div id="resultSeven">
 		
@@ -264,8 +241,8 @@
             
             
             <td width="250px" Height="250px" align="center" valign="centre">
-                <h2><b><u>Heading</u></b></h2>
-               <img style="height: 150px; width: 200px" src="pic/paris.jpg" />
+                <h2><b><u>Apple New Tech</u></b></h2>
+               <img style="height: 150px; width: 200px" src="pic/Applelogo.jpg" />
                <p id="displayEight"><a href="#">Display Article Description</a></p>
       		<div id="resultEight">
 		
@@ -297,7 +274,7 @@
 
 <br>
                 
-     <a class="twitter-timeline" href="https://twitter.com/StudentResourse" data-widget-id="587483155935944704">Tweets by @StudentResourse</a>
+     <a class="twitter-timeline" href="https://twitter.com/intheknow122" data-widget-id="587483155935944704">Tweets by @intheknow122</a>
 <script>
     !function(d,s,id){
     var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
@@ -314,8 +291,8 @@
 
       
         <footer>
-            <hr>
-             <div class="container" style="background-color: #f2f2f2" >
+            <hr><div id=getcont></div>
+             <div class="container" style="background-color: #e6e6e6" >
 <br/>
 <br/>
 

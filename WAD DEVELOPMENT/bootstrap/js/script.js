@@ -99,7 +99,7 @@ function initialize() {
 
 		var resultStrOne = "";
 		
-		var itemsOne = $(data).find('description');
+		var itemsOne = $(data).find('des');
 		
 		$(itemsOne).each(function(i)
 		
@@ -132,7 +132,7 @@ function initialize() {
 
 		var resultStrTwo = "";
 		
-		var itemsTwo = $(data).find('title');
+		var itemsTwo = $(data).find('des1');
 		
 		$(itemsTwo).each(function(i)
 		
@@ -165,7 +165,7 @@ function initialize() {
 
 		var resultStrThree = "";
 		
-		var itemsThree = $(data).find('title');
+		var itemsThree = $(data).find('des2');
 		
 		$(itemsThree).each(function(i)
 		
@@ -199,7 +199,7 @@ function initialize() {
 
 		var resultStrFour = "";
 		
-		var itemsFour = $(data).find('title');
+		var itemsFour = $(data).find('des3');
 		
 		$(itemsFour).each(function(i)
 		
@@ -233,7 +233,7 @@ function initialize() {
 
 		var resultStrFive = "";
 		
-		var itemsFive = $(data).find('title');
+		var itemsFive = $(data).find('des4');
 		
 		$(itemsFive).each(function(i)
 		
@@ -266,7 +266,7 @@ function initialize() {
 
 		var resultStrSix = "";
 		
-		var itemsSix = $(data).find('title');
+		var itemsSix = $(data).find('des5');
 		
 		$(itemsSix).each(function(i)
 		
@@ -300,7 +300,7 @@ function initialize() {
 
 		var resultStrSeven = "";
 		
-		var itemsSeven = $(data).find('title');
+		var itemsSeven = $(data).find('des6');
 		
 		$(itemsSeven).each(function(i)
 		
@@ -333,7 +333,7 @@ function initialize() {
 
 		var resultStrEight = "";
 		
-		var itemsEight = $(data).find('title');
+		var itemsEight = $(data).find('des7');
 		
 		$(itemsEight).each(function(i)
 		
