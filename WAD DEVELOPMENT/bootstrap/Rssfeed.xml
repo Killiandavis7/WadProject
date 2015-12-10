@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="Rssfeed.xsl" ?>
+<?xml-stylesheet type="text/css" href="Rssfeed.css" ?>
+<rss version="2.0" >
+	<channel>
+		<title>Bus checker.com</title>
+		<link>http://www.xefteri.com</link>
+		<description>The latest articles from buscheker.com</description>
+		<language>en-us</language>
+		<copyright>Copyright 2015 Dublin Bus Time Checker</copyright>
+		<lastBuildDate>Wed, 02 Oct 2002 08:00:00 EST</lastBuildDate>
+
+		<item>
+			<title>Your bus, rail and train fares are increasing today</title> 
+			<description>Dublin bus has annouced that fares....</description>
+			<pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+			<link>file:///H:/Web%20Development/Article1.html</link>
+		</item>
+	
+		<item>
+			<title>Bus crash near Artance roundabout, two people dead</title> 
+			<description>A fatal crash has happened....</description>
+			<pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+			<link>file:///H:/Web%20Development/Article2.html</link>
+		</item>
+	
+		<item>
+			<title>New Leap Cards being introduced, reduce fare by 50 cents. </title> 
+			<description>It seems as though the recession is starting to......</description>
+			<pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+			<link>file:///H:/Web%20Development/Article3.html</link>
+		</item>
+	
+		<item>
+			<title>Passengers left terrified as brawl breaks out on bus </title> 
+			<description>An 18 year old youth is left in critical condition...</description>
+			<pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+			<link>file:///H:/Web%20Development/Article4.html</link>
+		</item>
+	
+		<item>
+			<title>Bigger Buses to be introduced next year</title> 
+			<description>Soon there will be fewer people standing on the bus.</description>
+			<pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+			<link>file:///H:/Web%20Development/Article5.html</link>
+		</item>
+	
+	</channel>
+</rss>

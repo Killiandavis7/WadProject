@@ -16,6 +16,8 @@
 
     <link href="css/half-slider.css" rel="stylesheet">
     
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    
      <script src="https://maps.googleapis.com/maps/api/js"></script>
      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -23,6 +25,11 @@
     <script src="js/script.js"></script>
     
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="script.js"></script>
 
 
 </head>
@@ -273,22 +280,11 @@
 <div id="txtHint"><b>Weather info will be listed here...</b></div>
 
 <br>
-                
-<<<<<<< HEAD
+            
      <a class="twitter-timeline" href="https://twitter.com/intheknow112" data-widget-id="674654893681061888">Tweets by @intheknow112</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-=======
-     <a class="twitter-timeline" href="https://twitter.com/intheknow122" data-widget-id="587483155935944704">Tweets by @intheknow122</a>
-<script>
-    !function(d,s,id){
-    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js,fjs);
-        }}
-    (document,"script","twitter-wjs");
-</script>
->>>>>>> 6b26108025c3d57a26fb6937f5a51dfbb9e760ef
+
 
 
     </div>
@@ -300,8 +296,26 @@
              <div class="container" style="background-color: #e6e6e6" >
 <br/>
 <br/>
+  <div id="main">
 
-        <!-- Section: contact -->
+<div id="feedWidget">
+	<div id="activeTab">
+    	<!-- The name of the current tab is inserted here -->
+    </div>
+    
+    <div class="line"></div>
+    
+    <div id="tabContent">
+    	<!-- The feed items are inserted here -->
+    </div>
+</div>
+
+<div class="shadow"></div>
+<div class="back-to-the-tutorial"><a href="http://tutorialzine.com/2010/02/feed-widget-jquery-css-yql/"><img src="img/demo_page/back_to_the_tutorial.png" alt="Back To The Tutorial" width="280" height="120" /></a></div>
+
+</div>
+
+<!-- Section: contact -->
     <section id="contact" class="home-section text-center">
 		<div class="heading-contact">
 			<div class="container">
